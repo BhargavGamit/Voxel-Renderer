@@ -7,6 +7,8 @@ I have used Rasterisation technique to convert data from images to pixels to dis
 The output 3D model is rendered in a 3D space. 
 After rendering Anti-aliasing is used to make the output image look smooth.
 
+###Guide
+Dr G.Ramesh Chandra
 ###Description
 This project takes 2D sequence of images as input and was designed mainly to produce a 3D model from 2D MRI scans.
 Further more this code can be extended for various purposes by changing what to display.  
