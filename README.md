@@ -1,5 +1,6 @@
 # Voxel-Renderer
 A Voxel-Renderer used to convert sequence of 2D images into 3D model which can be viewed from any perspective.
+Naive algorithm is used.Planning to implement better algorithm in future when I have time.
 
 This project is developed using OpenGL Fixed Function Pipeline and the 
 dependencies are included in Clickme folder. Use the settings as specified.
