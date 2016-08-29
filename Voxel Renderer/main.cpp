@@ -20,7 +20,7 @@ vec3 camera; // The (regularly updated) vector coordinates of the camera locatio
 vec3 up;  // The (regularly updated) vector coordinates of the up location 
 const vec3 camerainit(0.0, 0.0, 4.0); // Initial camera position, also for resets (Change if needed)
 const vec3 upinit(0.0, 1.0, 0.0); // Initial up position, also for resets
-const int arrowForceInit = 5; //Initial step amount for camera movement, also for resets (Change if needed)
+const int arrowForceInit = 10; //Initial step amount for camera movement, also for resets (Change if needed)
 
 int w = 500, h = 500; // width and height 
 int noofimages;
@@ -199,7 +199,7 @@ void display() {
 	for (float image_iterator = negative_z_border; image_iterator < positive_z_border; image_iterator = image_iterator + offset)
 	{
 
-		glBindTexture(GL_TEXTURE_2D, texture[int((image_iterator / offset) + (noofimages+1 / 2) )+1 ] );
+		glBindTexture(GL_TEXTURE_2D, texture[int((image_iterator / offset) + ((noofimages+1) / 2.0) )+1 ] );
 		
 		//Get image width and height
 		int width, height;
